@@ -69,8 +69,8 @@ class LLM_Summ:
         self.llm = None
         self.subject = subject
     
-    def llm_connect(self, key):
-        self.llm = connect_to_LLM(llm_opt=key)
+    def llm_connect(self, key, opt):
+        self.llm = connect_to_LLM(llm_key=key, llm_opt=opt)
     
     def generate_FullText(self, docs):
         document_list = []
@@ -93,9 +93,12 @@ class LLM_Summ:
     
     def standardSummaries(self, component, docs):
         docString = './'+self.subject+'/component_'+str(component)
+        strBuild = ''
         print(f"Component: {component}")
+        strBuild = strBuild+ '\n'+f"Component: {component}"
         genes_involved = [x.metadata['Name'] for x in docs]
         print(f"Genes Involved: {' '.join(genes_involved)} ")
+        strBuild = strBuild+ '\n'+f"Genes Involved: {' '.join(genes_involved)} "
         pathways = []
         interactions = []
         for doc in docs:
@@ -103,17 +106,24 @@ class LLM_Summ:
                 pathways.append(connect[3])
                 interactions.append(connect)
         print(f"Pathways Involved: ")
+        strBuild = strBuild+ '\n'+f"Pathways Involved: "
         for path in set(pathways):
             print(path)
+            strBuild = strBuild+'\n'+path
         print('\n')
+        strBuild = strBuild+'\n'
         print(f"Interactions Involved: {interactions}")
+        strBuild = strBuild+'\n'+f"Interactions Involved: {interactions}"
         print("\n")
+        strBuild = strBuild+'\n'
             
         processed_Docs = self.generate_FullText(docs)
         result = self.map_reduce_chain.invoke(processed_Docs)['output_text']
         print(result)
+        strBuild = strBuild+'\n'+result
         print('\n \n \n')
-        return result
+        strBuild = strBuild+'\n \n \n'
+        return strBuild
 
 
     def largeSummaries(self, component, docs):
