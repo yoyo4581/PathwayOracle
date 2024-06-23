@@ -12,39 +12,40 @@ from langchain_community.vectorstores.neo4j_vector import Neo4jVector
 from langchain.prompts.prompt import PromptTemplate
 from langchain.chains import GraphCypherQAChain
 
-load_dotenv()
+import requests
+import json
+import time
 
-kg_user = os.getenv("USER")
-kg_pswd = os.getenv("PASSWORD")
-kg_url = os.getenv("NEO4J_URL")
-llm_key = os.getenv("OPEN_API_KEY")
-OPENAI_MODEL = "gpt-3.5-turbo"
+out_server = 'https://azureflask-po.azurewebsites.net'
+in_server = 'http://127.0.0.1:5000'
 
-graph = None
+
+
+
 llm = None
 
-def connect_to_db():
-    global graph
-    try:
-        print("Attempting connection with graph database")
-        graph = Neo4jGraph(
-            url=kg_url,
-            username=kg_user,
-            password=kg_pswd
-        )
-    except:
-        print("Server is down")
-    else:
-        print("Connection successful")
-        return graph
+def queryToServer(query):
+    print(query)
+    time.sleep(3)
+    response = requests.get(out_server+'/query', params={'query': query})
+    print(response.status_code)
+    return response.json()
 
-def connect_to_LLM(llm_opt = llm_key):
+def cQueryToServer(query, parameters):
+    print(query, parameters)
+    time.sleep(3)
+    data = {'query':query, 'params':parameters}
+    response = requests.post(out_server+'/cQuery', json=data)
+    print('Response Status', response.status_code)
+    return response.json()
+
+def connect_to_LLM(llm_key, llm_opt):
     global llm
     try:
         print("Attempting connection with LLM ChatOpenAi")
         llm = ChatOpenAI(
-            openai_api_key = llm_opt,
-            model = OPENAI_MODEL,
+            openai_api_key = llm_key,
+            model = llm_opt,
             temperature=0.0
         )
 

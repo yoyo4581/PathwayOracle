@@ -1,4 +1,4 @@
-from .db import connect_to_db
+from .db import queryToServer, cQueryToServer
 import subprocess
 import csv
 import random
@@ -35,7 +35,6 @@ class PA_KG:
 
         self.exp_id = exp_id
         self.clone_relation = exp_id+'_rel'
-        self.graph = None
         self.common_text = exp_id+'_text'
         self.textIndex_label = self.common_text+'Embed'
         self.scoreString = self.common_text+'Score'
@@ -76,21 +75,21 @@ class PA_KG:
                 p_count = p_count + 1
 
 
-    def checkVector_Index(self):
-        textCheck = f"""
-        SHOW index
-        """
+    # def checkVector_Index(self):
+    #     textCheck = f"""
+    #     SHOW index
+    #     """
 
-        textChecker = self.graph.query(textCheck)
-        found_idx = False
-        for index in textChecker:
-            if index['name'] == self.textIndex_label:
-                found_idx = True
+    #     textChecker = queryToServer(textCheck)
+    #     found_idx = False
+    #     for index in textChecker:
+    #         if index['name'] == self.textIndex_label:
+    #             found_idx = True
 
-        if found_idx:
-            print('Vector Index created successfully')
-        else:
-            print('Error Vector Index not created')
+    #     if found_idx:
+    #         print('Vector Index created successfully')
+    #     else:
+    #         print('Error Vector Index not created')
 
 
     def scoreText(self):
@@ -102,7 +101,7 @@ class PA_KG:
         RETURN n
         """
 
-        text_res = self.graph.query(query=text_tag)
+        text_res = queryToServer(query=text_tag)
 
         print('Creating a vector index')
         indexConfig = {
@@ -119,8 +118,7 @@ class PA_KG:
         OPTIONS {options}
         """
 
-        textVec = self.graph.query(textVec_index)
-        self.checkVector_Index()
+        textVec = queryToServer(textVec_index)
 
         score_call_linked = f"""
         MATCH (t1:{self.common_text})<-[:CONTAINS]-(g:Genes:{self.exp_id})
@@ -141,7 +139,7 @@ class PA_KG:
         RETURN res.subject_node, res.object_node
         """
 
-        linkScore = self.graph.query(query=score_call_linked)
+        linkScore = queryToServer(query=score_call_linked)
         if len(linkScore)>0:
             print('Linked Genes Text nodes have been scored')
         
@@ -163,7 +161,7 @@ class PA_KG:
         SET n:{self.scoreString}
         RETURN res.subject_node, res.object_node
         """
-        notLinkScore = self.graph.query(query=score_notlinked)
+        notLinkScore = queryToServer(query=score_notlinked)
         if len(notLinkScore)>0:
             print('Non-linked Genes Text nodes have been scored')
         
@@ -178,14 +176,14 @@ class PA_KG:
         RETURN n, r2, m
         """
 
-        clone_results = self.graph.query(query=clone_rel,
-                                         params={"clone_relation":self.clone_relation})
+        clone_results = cQueryToServer(query=clone_rel,
+                                         parameters={"clone_relation":self.clone_relation})
         
         test2 = f"""
         MATCH ()-[r:{self.clone_relation}]->() RETURN count(r)
         """
 
-        test2_res = self.graph.query(query=test2)
+        test2_res = queryToServer(query=test2)
 
         if int(test2_res[0]['count(r)'])>0:
             print('Successfully created temporary cloned relationships')
@@ -201,7 +199,7 @@ class PA_KG:
         YIELD
         graphName AS graph, nodeProjection, nodeCount AS nodes, relationshipProjection, relationshipCount AS rels
         """
-        graph_create = self.graph.query(query=graph_proj, params={"exp_id":self.exp_id, "clone_relation":self.clone_relation})
+        graph_create = cQueryToServer(query=graph_proj, parameters={"exp_id":self.exp_id, "clone_relation":self.clone_relation})
 
         wcc_analysis = """
         CALL gds.wcc.stream('myGraph')
@@ -211,7 +209,7 @@ class PA_KG:
         ORDER BY componentId, name
         """
         #Results are names of genes or Pathways and the component they belong to.
-        wcc_res = self.graph.query(query=wcc_analysis)
+        wcc_res = queryToServer(query=wcc_analysis)
         
         #4. Identify summary statistics. Namely the componentNumber is useful which is 11.
 
@@ -220,7 +218,7 @@ class PA_KG:
         YIELD componentCount, preProcessingMillis, computeMillis, postProcessingMillis, componentDistribution, configuration
         """
 
-        summ_res = self.graph.query(query=wcc_summ)
+        summ_res = queryToServer(query=wcc_summ)
 
         print('Number of components identified:',summ_res[0]['componentCount'])
 
@@ -229,7 +227,7 @@ class PA_KG:
             drop_graph = """
             CALL gds.graph.drop('myGraph')
             """
-            graph_dropped = self.graph.query(query=drop_graph)
+            graph_dropped = queryToServer(query=drop_graph)
         except:
             print("WCC Graph not found")
         else:
@@ -262,14 +260,14 @@ class PA_KG:
         DELETE r
         """
 
-        clonDel = self.graph.query(query=delete_CloneRel)
+        clonDel = queryToServer(query=delete_CloneRel)
 
         check_deleted = f"""
         MATCH (n:{self.exp_id})-[r:{self.clone_relation}]-(m:{self.exp_id})
         RETURN r
         """
 
-        checkRes = self.graph.query(query=check_deleted)
+        checkRes = queryToServer(query=check_deleted)
         if not checkRes:
             print("Generic cloned relationships deleted")
 
@@ -278,7 +276,7 @@ class PA_KG:
         MATCH (n:{self.common_text})
         REMOVE n:{self.common_text}
         """
-        textDel = self.graph.query(query=delete_TextLabels)
+        textDel = queryToServer(query=delete_TextLabels)
 
         check_TextDel = f"""
         MATCH (n:{self.common_text})
@@ -289,7 +287,6 @@ class PA_KG:
 
 
     def kgSubgraph(self):
-        self.graph = connect_to_db()
         self.dataLoad()
 
         print('Marking results in kg subgraph')
@@ -298,25 +295,23 @@ class PA_KG:
         // Load the genes and pathways from CSV files
         WITH $gene_list as gene_list, $path_list as path_list
         UNWIND gene_list as geneName
-        UNWIND path_list as pathName
-        WITH geneName, gene_list, pathName
         MATCH (g:Genes)-[t:belongs_to]->(p:Pathway)
-        WHERE p.name CONTAINS pathName and g.name=geneName
+        WHERE p.name IN path_list and g.name=geneName
         SET g:{self.exp_id}, t.tags = coalesce(t.tags, []) + '{self.exp_id}', p:{self.exp_id}
         WITH g, p, t, gene_list
         OPTIONAL MATCH (g)-[r]-(g2:Genes)
         WHERE r.Pathway = p.name AND g2.name IN gene_list
         SET r.tags = coalesce(r.tags, []) + '{self.exp_id}'
-        WITH g, g2, p, r, t
+        WITH g
         OPTIONAL MATCH (g)-[c:CONTAINS]->(tn:TextNode)
         WHERE g.Function IS NOT NULL
         SET tn:{self.exp_id}, c.tags = coalesce(c.tags, []) + '{self.exp_id}'
-        RETURN g, g2, p, r, t, tn, c
+        RETURN g
         """
         path_list = list(self.path_Data.keys())
         gene_list = list(self.gene_Data.keys())
 
-        load_results = self.graph.query(query=loadQuery, params={"path_list":path_list, "gene_list": gene_list})
+        load_results = cQueryToServer(query=loadQuery, parameters={"path_list":path_list, "gene_list": gene_list})
 
         test = f"""
         MATCH (n:{self.exp_id})-[r]->(m:{self.exp_id})
@@ -324,9 +319,9 @@ class PA_KG:
         RETURN n,r,m
         """
 
-        test_results = self.graph.query(query=test)
+        test_results = queryToServer(query=test)
 
-        if test_results[0]['n'].keys():
+        if test_results and 'n' in test_results[0] and test_results[0]['n']:
             print('Marking KG Subgraph successful')
         else:
             print('Could not mark KG Subgraph')
@@ -357,7 +352,7 @@ class PA_KG:
         RETURN entityName, components, HubCount, GeneConnections, page_content, Embedding, ontology
         """
 
-        documents = self.graph.query(query=retQuery, params={"wcc_res": self.wcc_res})
+        documents = cQueryToServer(query=retQuery, parameters={"wcc_res": self.wcc_res})
 
         if documents:
             print('Retrieval Successful!')
