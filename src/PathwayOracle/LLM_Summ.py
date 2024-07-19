@@ -377,9 +377,8 @@ class LLM_Summ:
         print('Writing txt files to directory', os.getcwd())
         for key, val in store.items():
             fileString =preString + '/'+str(key)+'_'+str(val[1])+'.txt'
-            f = open(fileString, 'w')
-            f.write(str(val[0]))
-            f.close()
+            with open(fileString, 'w', encoding='utf-8') as f:
+                f.write(str(val[0]))
 
         return store
 
