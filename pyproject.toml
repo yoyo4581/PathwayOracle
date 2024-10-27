@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "PathwayOracle"
-version = "1.0.2"
+version = "2.0.1"
 dependencies = [
     "langchain-community",
     "langchain-openai",
@@ -14,17 +14,21 @@ dependencies = [
     "python-dotenv",
     "scikit-learn",
     "hdbscan",
-    "nltk",
     "numpy",
     "matplotlib",
-    "requests"
+    "requests",
+    "neo4j",
+    "torch",
+    "torchvision",
+    "torchaudio",
+    "transformers",
 ]
 authors = [
   { name="Yahya Al Sabeh", email="yahyaalsabeh@gmail.com" },
 ]
 description = "An LLM-empowered, KG-Driven, Gene Pathway Analysis Tool"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = "==3.10.15"
 classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
