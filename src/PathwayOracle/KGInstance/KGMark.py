@@ -1,6 +1,6 @@
 import csv
-from db import cQueryToServer
-from KGInstance import KGCypher
+from ..db import cQueryToServer
+from . import KGCypher
 import os
 
 class kgSubgraph:

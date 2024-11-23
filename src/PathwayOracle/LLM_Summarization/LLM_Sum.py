@@ -13,7 +13,7 @@ from langchain.chains.combine_documents.reduce import (
             split_list_of_docs,
         )
 
-from db import llm
+from ..db import llm
 
 
 class LLM_Summ:
@@ -36,13 +36,15 @@ class LLM_Summ:
     reduce_template = """
     The following is a set of summaries:
     {docs}
+    Your goal is to explain why the gene is implicated with the subject using this information. Thus, break concepts down.
+
     Only cover genes that demonstrate substantial evidence to be implicated with the subject matter. 
     On relevant genes cover genes they are associated with. 
     A gene's ontology with another gene shows that they are in direct interaction and describes the functional role of that interaction.
-    For relevant genes note their expression values with respect to the expression values of the other genes in the document set.
 
     Create a cohesive summary in paragraph format, that is clear and concise.
-
+    When referencing publications mention the findings and how they are relevant to the subject matter.
+    
     Do not treat every summary equivocally in terms of focus. Instead focus on the relevant summaries with passing mentions to other genes.
     When publication information is referenced maintain the PMID.
     """
@@ -59,16 +61,13 @@ class LLM_Summ:
     Document: {content}
     """
 
-    def __init__(self, groupedDocuments, subject, token_max : int = None):
+    def __init__(self, groupedDocuments, subject, token_max):
         self.groupedDocuments = self.expressionOrganize(groupedDocuments)
         self.llm = llm
         self.subject = subject
         self.app_big = self.buildSumm()
         self.app_small = self.smallBuild()
-        if self.token_max is None:
-            self.token_max = 1000
-        else:
-            self.token_max = token_max
+        self.token_max = token_max
 
         
     def expressionOrganize(self, componentDocs):

@@ -10,6 +10,7 @@ dependencies = [
     "langchain-openai",
     "langchain",
     "langchain-core",
+    "langgraph",
     "langchain-text-splitters",
     "python-dotenv",
     "scikit-learn",

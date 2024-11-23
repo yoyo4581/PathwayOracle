@@ -8,10 +8,10 @@ from langchain.callbacks.manager import (
 # Import things that are needed generically
 from pydantic import BaseModel, Field
 from langchain.tools import BaseTool
-from AgentFiles.CommonOnto import parseOutInfo
-from AgentFiles.TextSearch import get_MultCandidates
+from .CommonOnto import parseOutInfo
+from .TextSearch import get_MultCandidates
 from typing import List, Tuple
-from db import cQueryToServer, queryToServer
+from ..db import cQueryToServer, queryToServer
 
 
 ## Ontology network formatted:

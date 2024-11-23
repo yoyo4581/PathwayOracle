@@ -14,7 +14,7 @@ import requests
 import time
 from dotenv import load_dotenv
 
-import time
+from flask import jsonify
 import requests
 from requests.exceptions import JSONDecodeError
 
@@ -22,9 +22,30 @@ from requests.exceptions import JSONDecodeError
 load_dotenv()
 
 out_server = 'https://azureflask-po.azurewebsites.net'
-
+#in_server = 'http://127.0.0.1:5000'
 
 llm = None
+
+def VMServer_Initialize(action):
+    if action=='status':
+        try:
+            #Sending GET request to the server for VM current status
+            response = requests.get(out_server + '/status-vm')
+            print('VM Response Status:', response.text)
+            return True
+        except requests.exceptions.RequestException as e:
+            # Handle exceptions during the request
+            print(f"Error calling the API: {e}")
+            return False
+    elif action=='start':
+        try:
+            #Sending GET request to the server for VM start
+            response = requests.get(out_server + '/start-vm')
+            print('VM Response Start:', response.text)
+            return True
+        except requests.exceptions.RequestException as e:
+            print(f"Error calling the API: {e}")
+            return False
 
 def queryToServer(query):
     time.sleep(3)  # Delay for throttling purposes
@@ -32,7 +53,7 @@ def queryToServer(query):
     try:
         # Sending GET request to the server
         response = requests.get(out_server + '/query', params={'query': query})
-        print('Response Status:', response.status_code)
+        #print('Response Status:', response.status_code)
 
         if response.status_code == 200:
             try:
@@ -57,7 +78,7 @@ def cQueryToServer(query, parameters):
     
     try:
         response = requests.post(out_server + '/cQuery', json=data)
-        print('Response Status:', response.status_code)
+        #print('Response Status:', response.status_code)
 
         if response.status_code == 200:
             try:
@@ -83,7 +104,7 @@ OPENAI_MODEL = 'gpt-4o-mini'
 
 try:
     print("Attempting connection with LLM ChatOpenAi")
-    chat_llm = ChatOpenAI(temperature=0.2, model=OPENAI_MODEL, streaming=True)
+    chat_llm = ChatOpenAI(openai_api_key = os.environ['OPENAI_API_KEY'], temperature=0.2, model=OPENAI_MODEL, streaming=True)
     llm = ChatOpenAI(
         openai_api_key = os.environ['OPENAI_API_KEY'] ,
         model = OPENAI_MODEL,

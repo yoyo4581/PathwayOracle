@@ -8,12 +8,12 @@ from pydantic import BaseModel, Field
 from langchain.schema import AIMessage, HumanMessage
 from langchain_core.utils.function_calling import convert_to_openai_function
 
-from AgentFiles.FunctionTool import FunctionTool
-from AgentFiles.OntoTool import CommonGeneTool
-from AgentFiles.PubFindTool import PubInfoLinkedTool
+from .FunctionTool import FunctionTool
+from .OntoTool import CommonGeneTool
+from .PubFindTool import PubInfoLinkedTool
 import os
 
-from db import chat_llm
+from ..db import chat_llm
 
 
 

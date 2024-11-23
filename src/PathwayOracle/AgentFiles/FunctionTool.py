@@ -8,9 +8,9 @@ from langchain.callbacks.manager import (
 # Import things that are needed generically
 from pydantic import BaseModel, Field
 from langchain.tools import BaseTool
-from AgentFiles.TextSearch import get_MultCandidates
+from .TextSearch import get_MultCandidates
 from typing import List, Tuple
-from db import cQueryToServer, queryToServer
+from ..db import cQueryToServer, queryToServer
 
 
 description_query = """

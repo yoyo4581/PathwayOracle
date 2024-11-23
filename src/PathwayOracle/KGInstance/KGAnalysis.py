@@ -1,5 +1,5 @@
-from KGInstance import KGCypher
-from db import cQueryToServer, queryToServer
+from . import KGCypher
+from ..db import cQueryToServer, queryToServer
 import numpy as np
 from collections import Counter
 from sklearn.metrics.pairwise import cosine_similarity
@@ -17,7 +17,6 @@ class kgAnalysis:
         self.recovery = recovery
 
         if not self.recovery:
-            self.ref_Abstracts = self.primeAbstracts()
             self.tokenizer = BertTokenizer.from_pretrained('dmis-lab/biobert-base-cased-v1.2')
             self.model = BertModel.from_pretrained('dmis-lab/biobert-base-cased-v1.2')
 

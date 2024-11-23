@@ -5,13 +5,14 @@ import numpy as np
 from sklearn.cluster import KMeans
 from langchain.docstore.document import Document
 from collections import defaultdict
-from KGInstance.KGInstance import KG_InstanceFind
-from KGInstance.KGMark import kgSubgraph
-from KGInstance.KGAnalysis import kgAnalysis
-from KGInstance.KGRetrieval import AgentRetrieval
-from AgentFiles.Agent import agent_executor
+from .KGInstance import KG_InstanceFind
+from .KGMark import kgSubgraph
+from .KGAnalysis import kgAnalysis
+from .KGRetrieval import AgentRetrieval
+from ..AgentFiles.Agent import agent_executor
 from typing import List, Tuple
-from LLM_Summarization.LLM_Sum import LLM_Summ
+from ..LLM_Summarization.LLM_Sum import LLM_Summ
+from ..db import VMServer_Initialize
 
 
 
@@ -21,9 +22,23 @@ class PA_KG:
         
         self.recoveryMode = False
         # Regardless each facade has an object Instance Manager
+
+        #The first thing we do is check if the VM is on, and if it is, then configure instance
+        self.VM_Status = self.VM_Communicate()
         # This first identifies the user and if the user is not found it creates one.
         self.kgObj = KG_InstanceFind(email=email, user=user, subject=subject)
 
+    def VM_Communicate(self):
+        # The first thing we will do is get the VM Status
+        response = VMServer_Initialize(action='status')
+        if response:
+            return response
+        #The status is False (Not initialized)
+        else:
+            #It can still fail, but if it does, then the user would be alerted that the api isnt working
+            response = VMServer_Initialize(action='start')
+            return response
+        
     def fromInstance(self, instance_id = None):
         self.recoveryMode = True
         self.kgObj.fromInstance(instance=instance_id)
@@ -96,7 +111,7 @@ class PA_KG:
 
         return summedDocs    
 
-    def processAll(self, geneFile, pathFile, token_max: int = None):
+    def processAll(self, geneFile, pathFile, token_max=1000):
         if self.recoveryMode:
             print("Do not reprocess data from pre-existing instance. Use fromInstance method with instance_id.")
             return

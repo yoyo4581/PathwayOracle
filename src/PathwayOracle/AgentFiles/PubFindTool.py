@@ -8,9 +8,9 @@ from langchain.callbacks.manager import (
 # Import things that are needed generically
 from pydantic import BaseModel, Field
 from langchain.tools import BaseTool
-from AgentFiles.TextSearch import get_MultCandidates, generate_full_text_query
-from AgentFiles.BertEmbeddings import bio_bert_embeddings
-from db import cQueryToServer, queryToServer
+from .TextSearch import get_MultCandidates, generate_full_text_query
+from .BertEmbeddings import bio_bert_embeddings
+from ..db import cQueryToServer, queryToServer
 
 
 
@@ -84,7 +84,7 @@ def get_pub_linked_info(entity: str, entity_linked: List[str], subject_phrases: 
 class PublicationLinkedInput(BaseModel):
     entity: str = Field(description="the question itself")
     entity_linked: List[str] = Field(description="any gene specified in the question. Dont include the term 'gene'.")
-    subject_phrases: List[str] = Field(description="Extract key concepts and common phrases from the subject, excluding the gene name. \
+    subject_phrases: List[str] = Field(description="Extract key concepts and common phrases from the subject, EXCLUDING the gene name. \
 Make sure to include the base phrase and variations that are found in the subject string. \
 For example, for the subject 'age-effect in infiltrating ductal breast cancer': \
 Answer: ['age-effect', 'infiltrating ductal breast cancer', 'breast cancer', 'ductal breast cancer', 'age-effect cancer', 'age-effect infiltrating ductal breast cancer'].")

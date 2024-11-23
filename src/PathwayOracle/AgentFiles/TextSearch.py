@@ -1,6 +1,6 @@
 from typing import Dict, List
 
-from db import cQueryToServer, queryToServer
+from ..db import cQueryToServer, queryToServer
 
 
 def get_user_id() -> int:

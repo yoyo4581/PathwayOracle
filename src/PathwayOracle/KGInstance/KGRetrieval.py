@@ -1,6 +1,6 @@
-from AgentFiles.Agent import agent_executor
+from ..AgentFiles.Agent import agent_executor
 from typing import List, Tuple
-from db import cQueryToServer
+from ..db import cQueryToServer
 from collections import defaultdict
 from langchain.docstore.document import Document
 

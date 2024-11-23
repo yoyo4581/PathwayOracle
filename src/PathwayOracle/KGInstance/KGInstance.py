@@ -1,4 +1,4 @@
-from db import cQueryToServer, queryToServer
+from ..db import cQueryToServer, queryToServer
 import random
 
 class KG_InstanceFind:
