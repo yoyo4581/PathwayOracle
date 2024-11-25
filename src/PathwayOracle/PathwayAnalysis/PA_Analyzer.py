@@ -40,19 +40,6 @@ class PA_Analysis:
             # Construct the absolute path of netGSA.R
             netgsa_path = os.path.abspath(os.path.join(current_dir, 'netGSA.R'))
             print(f"Resolved netGSA script path: {netgsa_path}")
-            
-            # Resolve paths to input files
-            self.pathGene = os.path.abspath('./PathwayOracle/testDataFiles/data_Matrix_Ductal_Age.txt')
-            self.pathGroup = os.path.abspath('./PathwayOracle/testDataFiles/group_ductal_age_data.txt')
-            self.write_to = os.path.abspath(self.write_to)
-            print(f"Resolved pathGene: {self.pathGene}")
-            print(f"Resolved pathGroup: {self.pathGroup}")
-            print(f"Resolved write_to: {self.write_to}")
-
-            # Check if required files exist
-            self.check_file_exists(netgsa_path)
-            self.check_file_exists(self.pathGene)
-            self.check_file_exists(self.pathGroup)
 
             # Construct the command
             command = ["Rscript", netgsa_path, self.pathGene, self.pathGroup, current_dir, self.write_to]

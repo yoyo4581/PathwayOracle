@@ -6,16 +6,11 @@ from langchain_community.chat_models import ChatOpenAI
 
 from dotenv import load_dotenv
 import os
-
 from langchain_openai import ChatOpenAI
 
 
 import requests
 import time
-from dotenv import load_dotenv
-
-from flask import jsonify
-import requests
 from requests.exceptions import JSONDecodeError
 
 
