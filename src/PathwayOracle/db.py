@@ -27,7 +27,10 @@ def VMServer_Initialize(action):
             #Sending GET request to the server for VM current status
             response = requests.get(out_server + '/status-vm')
             print('VM Response Status:', response.text)
-            return True
+            if 'deallocated' in response.text:
+                return False
+            else:
+                return True
         except requests.exceptions.RequestException as e:
             # Handle exceptions during the request
             print(f"Error calling the API: {e}")
@@ -35,7 +38,7 @@ def VMServer_Initialize(action):
     elif action=='start':
         try:
             #Sending GET request to the server for VM start
-            response = requests.get(out_server + '/start-vm')
+            response = requests.post(out_server + '/start-vm')
             print('VM Response Start:', response.text)
             return True
         except requests.exceptions.RequestException as e:

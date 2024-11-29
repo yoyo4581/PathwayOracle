@@ -17,8 +17,6 @@ from ..db import llm
 
 
 class LLM_Summ:
-    # Map
-    token_max = 1000
 
     map_template = """
     The following are responses from an LLM Agent answering questions about genes specifically to their association with a subject matter: {context}.
@@ -61,13 +59,22 @@ class LLM_Summ:
     Document: {content}
     """
 
-    def __init__(self, groupedDocuments, subject, token_max):
+    def __init__(self, groupedDocuments, components_selection, subject, token_max=1000):
         self.groupedDocuments = self.expressionOrganize(groupedDocuments)
         self.llm = llm
         self.subject = subject
         self.app_big = self.buildSumm()
         self.app_small = self.smallBuild()
         self.token_max = token_max
+        self.component_select = components_selection
+        # A selection is specified
+        if self.component_select:
+            # Filter logic
+            self.groupedDocuments = {
+                k: {sub_k: v for sub_k, v in sub_dict.items() if sub_k in self.component_select[k]}
+                for k, sub_dict in self.groupedDocuments.items()
+                if k in self.component_select
+            }
 
         
     def expressionOrganize(self, componentDocs):

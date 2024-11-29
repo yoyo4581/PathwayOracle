@@ -79,13 +79,13 @@ class PA_KG:
 
         summedDocs = defaultdict(lambda: defaultdict(dict))
 
-        for compoKey, subcompos in self.Summarize.groupedDocuments.items():
+        for compoKey, subcompos in self.SummedObj.groupedDocuments.items():
             for subcompoKey, docs in subcompos.items():
                 print(f'Working on component key: {compoKey}, subcomponent key: {subcompoKey}')
                 print(' '.join([ doc.metadata['Name'] for doc in docs]))
 
                 if len(docs)>1:
-                    async for step in self.Summarize.app_big.astream(
+                    async for step in self.SummedObj.app_big.astream(
                         {"contents": docs},
                         {"recursion_limit": 15},
                     ):
@@ -93,7 +93,7 @@ class PA_KG:
                     
                     summedDocs[compoKey][subcompoKey] = step['evaluate_final_summary']
                 else:
-                    async for step in self.Summarize.app_small.astream(
+                    async for step in self.SummedObj.app_small.astream(
                         {"contents": docs},
                         {"recursion_limit": 15},
                     ):
@@ -122,13 +122,16 @@ class PA_KG:
 
         self.agentRet = AgentRetrieval(subject=self.kgObj.subject, wcc_res=self.analysis.wcc_res, instance_id= self.kgObj.instance_id)
 
-        self.retrieved_Docs = self.agentRet.agentCommunicate()
 
-        self.Summarize = LLM_Summ(subject= self.kgObj.subject, groupedDocuments=self.retrieved_Docs, token_max=token_max)
+    def Retrieval(self, components_select: dict[str, list]=None):
+        self.retrieved_Docs = self.agentRet.agentCommunicate(component_Select=components_select)
+
+    def Summarize(self, components_select: dict[str, list]=None, token_max=1000):
+        self.SummedObj = LLM_Summ(subject= self.kgObj.subject, components_selection=components_select, groupedDocuments=self.retrieved_Docs, token_max=token_max)
 
         
-        
-    
+# Idealy Marking and Analysis are always performed        
+# Retrieval is partially performed.    
         
         
      

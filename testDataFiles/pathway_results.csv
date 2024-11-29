@@ -1,4 +1,260 @@
 "pathway","pSize","pFdr","teststat"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+"Organismal Systems-Endocrine system-Prolactin signaling pathway",21,0,-44.9598740535043
+"Human Diseases-Infectious disease- viral-Hepatitis B",37,1.83718389135e-280,-38.2721725997294
+"Organismal Systems-Immune system-Platelet activation",20,6.83111894308365e-241,35.1805558183376
+"Cellular Processes-Transport and catabolism-Phagosome",7,3.29639763872786e-232,-34.3818746734796
+"Organismal Systems-Immune system-Fc epsilon RI signaling pathway",12,3.60545907988684e-232,35.3245664191948
+"Human Diseases-Cancer- overview-Choline metabolism in cancer",16,1.91469350047727e-231,-34.3677982560412
+"Organismal Systems-Immune system-Cytosolic DNA-sensing pathway",19,7.06360514158697e-224,-34.1460855709755
+"Environmental Information Processing-Signal transduction-Phospholipase D signaling pathway",27,1.0941496081327e-210,32.8244278614057
+"Human Diseases-Cancer- specific types-Melanoma",3,2.64066735751115e-193,-31.0553797376515
+"Human Diseases-Cancer- specific types-Glioma",4,6.63610407269494e-192,-30.9435814128372
+"Human Diseases-Cancer- specific types-Pancreatic cancer",13,4.85535214118794e-185,-30.3800777953308
+"Organismal Systems-Digestive system-Bile secretion",2,8.63889255208762e-185,-30.5923769270737
+"Organismal Systems-Aging-Longevity regulating pathway",14,1.07998644991713e-181,-30.0125704674109
+"Organismal Systems-Endocrine system-Adipocytokine signaling pathway",16,7.55973263948266e-179,-29.7674583740332
+"Organismal Systems-Nervous system-Retrograde endocannabinoid signaling",3,5.67706024107132e-153,27.396733882819
+"Human Diseases-Infectious disease- viral-Human cytomegalovirus infection",31,7.85809231527214e-152,27.2290115599527
+"Organismal Systems-Immune system-Fc gamma R-mediated phagocytosis",28,5.74669758317912e-151,27.2808049599893
+"Human Diseases-Substance dependence-Alcoholism",14,8.84908043073377e-147,-26.7487787978506
+"Human Diseases-Cancer- specific types-Non-small cell lung cancer",8,6.78241358098494e-144,-26.4483314594614
+"Metabolism-Amino acid metabolism-Phenylalanine, tyrosine and tryptophan biosynthesis",1,9.88210764275584e-143,26.3436941186864
+"Human Diseases-Endocrine and metabolic disease-Non-alcoholic fatty liver disease",30,2.73333419727041e-138,-25.8931652888034
+"Organismal Systems-Immune system-Chemokine signaling pathway",26,1.06890983156533e-135,25.6591485908247
+"Organismal Systems-Nervous system-Cholinergic synapse",6,5.69384633472335e-134,-25.4475992538858
+"Organismal Systems-Endocrine system-Growth hormone synthesis, secretion and action",26,8.4420432241338e-134,-25.5137759487178
+"Human Diseases-Cancer- specific types-Bladder cancer",6,2.6669562570105e-128,-24.8631027747333
+"Organismal Systems-Excretory system-Vasopressin-regulated water reabsorption",6,2.07612437244683e-126,-24.6654469390221
+"Organismal Systems-Immune system-IL-17 signaling pathway",40,1.85570046076928e-120,-24.3862468275488
+"Human Diseases-Neurodegenerative disease-Spinocerebellar ataxia",15,1.28606853973372e-119,23.9676509185243
+"Organismal Systems-Endocrine system-Ovarian steroidogenesis",3,1.27312440986398e-114,-23.4073420203071
+"Organismal Systems-Nervous system-GABAergic synapse",5,4.26074091719191e-108,-22.6928428472287
+"Organismal Systems-Immune system-Natural killer cell mediated cytotoxicity",35,6.54497992349627e-108,23.1083648905582
+"Organismal Systems-Endocrine system-Melanogenesis",18,1.52965413561494e-103,-22.2041016238428
+"Human Diseases-Cancer- specific types-Acute myeloid leukemia",16,3.51644107891985e-99,21.6871433207411
+"Human Diseases-Cancer- specific types-Prostate cancer",6,4.86461595100235e-94,-21.0807314723868
+"Cellular Processes-Cellular community - eukaryotesSignaling pathways regulating pluripotency of stem cells",29,5.46194317986311e-93,20.9662135349123
+"Human Diseases-Infectious disease- bacterial-Salmonella infection",87,2.29940533528114e-92,-21.0303006964287
+"Environmental Information Processing-Signal transduction-cAMP signaling pathway",46,8.04426209034572e-92,20.8054394792082
+"Human Diseases-Cancer- overview-Chemical carcinogenesis - receptor activation",41,2.49115882526762e-88,-20.442502909262
+"Organismal Systems-Environmental adaptation-Circadian entrainment",13,6.69461024117226e-87,-20.215880128255
+"Organismal Systems-Nervous system-Serotonergic synapse",10,2.68053933807994e-86,-20.1363913430135
+"Environmental Information Processing-Signal transduction-ErbB signaling pathway",30,5.07064552029825e-86,-20.281692254678
+"Organismal Systems-Endocrine system-Insulin secretion",9,7.96037613916905e-85,-19.9627269523398
+"Organismal Systems-Immune system-T cell receptor signaling pathway",32,1.28755315512143e-84,21.113721608302
+"Human Diseases-Neurodegenerative disease-Amyotrophic lateral sclerosis",42,3.15269566171025e-83,19.7816097229676
+"Human Diseases-Immune disease-Inflammatory bowel disease",18,6.42534218870183e-81,-19.4951776429732
+"Organismal Systems-Endocrine system-Thyroid hormone signaling pathway",36,6.77552970340809e-75,-18.7451282659721
+"Organismal Systems-Nervous system-Long-term depression",10,2.22382604480723e-74,-18.6250260657361
+"Human Diseases-Cancer- overview-Transcriptional misregulation in cancer",16,5.93957819193169e-73,-18.5542058848842
+"Environmental Information Processing-Signal transduction-HIF-1 signaling pathway",46,3.8078783563656e-72,-18.378492920075
+"Human Diseases-Infectious disease- bacterial-Legionellosis",16,4.37659973995952e-70,18.1720262984064
+"Metabolism-Lipid metabolism-alpha-Linolenic acid metabolism",4,1.92473543046038e-68,17.8093937175661
+"Cellular Processes-Cell growth and death-Ferroptosis",7,2.19605479290204e-68,17.8030013774786
+"Environmental Information Processing-Signal transduction-cGMP-PKG signaling pathway",32,3.47977606453912e-68,17.8880989826242
+"Human Diseases-Neurodegenerative disease-Prion disease",23,1.9294256491319e-67,-18.2709300252024
+"Human Diseases-Cancer- overview-Chemical carcinogenesis - reactive oxygen species",32,4.95500587406227e-67,17.6115257807465
+"Human Diseases-Cancer- specific types-Renal cell carcinoma",9,2.79847634665869e-65,17.4252236199164
+"Cellular Processes-Cellular community - eukaryotesAdherens junction",58,3.22759706083306e-64,17.2419179026263
+"Human Diseases-Cancer- overview-Proteoglycans in cancer",84,4.49137277325012e-64,17.3069223368564
+"Environmental Information Processing-Signal transduction-JAK-STAT signaling pathway",32,1.16458816618289e-63,17.1796462365703
+"Human Diseases-Substance dependence-Cocaine addiction",10,1.59978551986664e-63,-17.1125047267506
+"Human Diseases-Drug resistance- antineoplastic-Platinum drug resistance",11,1.91515712741512e-63,-17.2316004195354
+"Human Diseases-Endocrine and metabolic disease-Type II diabetes mellitus",12,2.77640050993635e-63,-17.0779729770554
+"Metabolism-Amino acid metabolism-Lysine degradation",18,1.31757032263981e-62,17.1094350064065
+"Human Diseases-Infectious disease- viral-Kaposi sarcoma-associated herpesvirus infection",31,1.40208602724357e-62,16.9742182049798
+"Organismal Systems-Immune system-Toll-like receptor signaling pathway",27,1.0814813992979e-61,-16.913852750833
+"Cellular Processes-Cell growth and death-Apoptosis - multiple species",19,1.34872367447521e-61,-16.8342717690226
+"Metabolism-Lipid metabolism-Fatty acid elongation",11,2.05125336067351e-61,-16.8080227856175
+"Metabolism-Carbohydrate metabolism-Starch and sucrose metabolism",10,1.68338203380489e-60,-16.9108810075511
+"Organismal Systems-Digestive system-Salivary secretion",4,5.07892401821024e-60,-16.616651765332
+"Metabolism-Amino acid metabolism-Cysteine and methionine metabolism",25,2.85973509977261e-50,15.1425179757975
+"Human Diseases-Infectious disease- parasitic-Amoebiasis",7,1.13889352250335e-49,-15.0270259732638
+"Organismal Systems-Endocrine system-GnRH signaling pathway",15,1.06976152422199e-48,-14.8942522729447
+"Environmental Information Processing-Signal transduction-PI3K-Akt signaling pathway",47,4.66298560011463e-48,14.7685243777312
+"Organismal Systems-Endocrine system-Progesterone-mediated oocyte maturation",13,5.56543274609051e-48,14.9014314344912
+"Cellular Processes-Transport and catabolism-Efferocytosis",62,1.78621060574656e-47,14.7434887474487
+"Environmental Information Processing-Signal transduction-Sphingolipid signaling pathway",31,2.22378297660741e-46,-14.4897275255377
+"Human Diseases-Cardiovascular disease-Diabetic cardiomyopathy",30,7.239087491319e-44,-14.2658118516282
+"Human Diseases-Infectious disease- bacterial-Bacterial invasion of epithelial cells",18,7.97034561784664e-44,14.1362854524881
+"Organismal Systems-Immune system-Leukocyte transendothelial migration",37,1.22833792807223e-43,14.5247913957591
+"Environmental Information Processing-Signal transduction-mTOR signaling pathway",45,1.72612208875044e-43,14.0098604423736
+"Organismal Systems-Endocrine system-Thyroid hormone synthesis",8,5.59703784920756e-43,-13.9244830630351
+"Metabolism-Amino acid metabolism-Phenylalanine metabolism",3,6.99327214371203e-43,13.9052033491663
+"Organismal Systems-Immune system-C-type lectin receptor signaling pathway",45,1.23027602137559e-41,13.6890376116951
+"Environmental Information Processing-Signal transduction-Phosphatidylinositol signaling system",24,2.65231327595818e-41,-14.0574635319291
+"Human Diseases-Drug resistance- antineoplastic-EGFR tyrosine kinase inhibitor resistance",24,2.39037135279903e-40,-13.5109233074245
+"Metabolism-Carbohydrate metabolism-Pyruvate metabolism",16,5.79888215083234e-40,13.485421083981
+"Metabolism-Carbohydrate metabolism-Citrate cycle (TCA cycle)",15,6.49608142087272e-40,13.462719964002
+"Human Diseases-Cardiovascular disease-Fluid shear stress and atherosclerosis",53,6.73275872018763e-39,-13.2263746624165
+"Metabolism-Carbohydrate metabolism-Ascorbate and aldarate metabolism",3,8.57452232007936e-39,-13.1751847476423
+"Metabolism-Metabolism of cofactors and vitamins-Nicotinate and nicotinamide metabolism",13,8.8454973732242e-38,12.9953628246426
+"Metabolism-Nucleotide metabolism-Pyrimidine metabolism",23,3.25463279205635e-37,12.9223825940342
+"Metabolism-Xenobiotics biodegradation and metabolism-Drug metabolism - cytochrome P450",3,4.47036406023989e-37,12.8847156439193
+"Cellular Processes-Cell growth and death-Necroptosis",46,5.43653492089286e-36,-12.6806553581885
+"Environmental Information Processing-Signal transduction-TNF signaling pathway",22,6.16617979785614e-36,12.6615669489618
+"Metabolism-Carbohydrate metabolism-Butanoate metabolism",10,1.17920150020255e-35,12.6089395842855
+"Metabolism-Metabolism of other amino acids-Selenocompound metabolism",9,1.45600098977927e-35,12.5772506284484
+"Environmental Information Processing-Signal transduction-Apelin signaling pathway",38,2.75604700961721e-34,-12.3554737848622
+"Human Diseases-Infectious disease- viral-Human papillomavirus infection",51,2.62513049159411e-33,12.1509674231185
+"Human Diseases-Cardiovascular disease-Dilated cardiomyopathy",9,6.51895281076407e-33,-12.0965242872301
+"Metabolism-Lipid metabolism-Steroid hormone biosynthesis",14,1.75024571924508e-31,12.3172078300982
+"Organismal Systems-Endocrine system-Estrogen signaling pathway",17,9.20376867636568e-31,-11.6980225966288
+"Human Diseases-Infectious disease- bacterial-Vibrio cholerae infection",10,1.5959684004291e-30,-11.5930731620008
+"Organismal Systems-Excretory system-Endocrine and other factor-regulated calcium reabsorption",8,1.50969501118049e-29,-11.3911860929217
+"Organismal Systems-Nervous system-Dopaminergic synapse",16,3.52923944321577e-29,11.3165158481341
+"Metabolism-Xenobiotics biodegradation and metabolism-Drug metabolism - other enzymes",18,2.80464481314133e-28,11.134509220164
+"Human Diseases-Infectious disease- parasitic-Chagas disease",23,6.98522328985133e-28,-11.0435888523382
+"Human Diseases-Infectious disease- viral-Coronavirus disease - COVID-19",37,1.80045186972157e-27,10.9940689012958
+"Organismal Systems-Development and regeneration-Axon guidance",72,5.33605674128229e-27,10.8561300873879
+"Cellular Processes-Cellular community - eukaryotesGap junction",25,1.02949633994099e-26,-10.7885414584956
+"Metabolism-Carbohydrate metabolism-Propanoate metabolism",16,1.46576548656795e-26,10.8366092763258
+"Metabolism-Carbohydrate metabolism-Inositol phosphate metabolism",23,3.90862435325511e-26,11.0413484299364
+"Human Diseases-Cancer- overview-Viral carcinogenesis",2,6.71079186102591e-26,10.6207128131135
+"Organismal Systems-Aging-Longevity regulating pathway - multiple species",20,4.92743233908508e-25,-10.4223625523368
+"Human Diseases-Neurodegenerative disease-Alzheimer disease",44,7.10525533233029e-24,-10.1535028539714
+"Human Diseases-Infectious disease- viral-Human T-cell leukemia virus 1 infection",52,8.10504432579137e-24,-10.1782473487604
+"Metabolism-Amino acid metabolism-Arginine biosynthesis",7,1.29887851604586e-23,-10.1049682720335
+"Metabolism-Amino acid metabolism-Tryptophan metabolism",17,2.0010806371299e-23,10.0967640897209
+"Metabolism-Carbohydrate metabolism-Glyoxylate and dicarboxylate metabolism",15,2.42360921311845e-23,10.0282622032903
+"Human Diseases-Substance dependence-Morphine addiction",9,4.35246161522563e-23,-9.96622902821463
+"Human Diseases-Immune disease-Allograft rejection",1,4.44251221745957e-23,-10.1262816810218
+"Human Diseases-Immune disease-Graft-versus-host disease",1,4.44251221745957e-23,-10.1262816810218
+"Cellular Processes-Cell growth and death-Cellular senescence",61,1.0001720782266e-22,9.922002407061
+"Metabolism-Glycan biosynthesis and metabolism-Glycosaminoglycan degradation",12,1.86521952613775e-21,-9.59890996521794
+"Metabolism-Glycan biosynthesis and metabolism-Glycosphingolipid biosynthesis - globo and isoglobo series",9,2.02171865723176e-21,9.56744976895337
+"Human Diseases-Cardiovascular disease-Lipid and atherosclerosis",80,3.49069511887989e-21,-9.55049500338597
+"Human Diseases-Neurodegenerative disease-Huntington disease",31,4.83930902072803e-21,-9.47462478743557
+"Human Diseases-Neurodegenerative disease-Parkinson disease",33,8.3157509004881e-21,9.4133292955984
+"Human Diseases-Cancer- overview-PD-L1 expression and PD-1 checkpoint pathway in cancer",31,8.4314514630331e-21,-9.43320568049236
+"Metabolism-Metabolism of cofactors and vitamins-Pantothenate and CoA biosynthesis",8,1.21834387172589e-20,-9.37079620884097
+"Human Diseases-Endocrine and metabolic disease-AGE-RAGE signaling pathway in diabetic complications",37,3.22108900966581e-20,-9.26901600797034
+"Metabolism-Carbohydrate metabolism-Fructose and mannose metabolism",15,4.12180265293548e-20,-9.28515042442806
+"Human Diseases-Cancer- specific types-Colorectal cancer",6,1.96692947361907e-19,9.0653262393173
+"Metabolism-Amino acid metabolism-Glycine, serine and threonine metabolism",18,2.83539109822125e-19,9.02681774859693
+"Cellular Processes-Cell growth and death-Apoptosis",66,7.32378993340231e-19,-8.93790100107999
+"Metabolism-Metabolism of cofactors and vitamins-Thiamine metabolism",4,1.46587761609628e-18,-8.83977500017109
+"Organismal Systems-Immune system-B cell receptor signaling pathway",26,3.92880223311244e-18,8.77663880639248
+"Metabolism-Xenobiotics biodegradation and metabolism-Metabolism of xenobiotics by cytochrome P450",5,4.73157932728963e-18,8.76545301245274
+"Human Diseases-Infectious disease- viral-Influenza A",16,1.39914132807262e-17,8.58063176741348
+"Organismal Systems-Immune system-Th1 and Th2 cell differentiation",22,2.08674656995637e-17,-8.5312461646995
+"Metabolism-Carbohydrate metabolism-Amino sugar and nucleotide sugar metabolism",32,3.7197111456812e-17,-8.48900326883374
+"Metabolism-Amino acid metabolism-Valine, leucine and isoleucine degradation",31,6.46749862634818e-17,8.42228503621328
+"Human Diseases-Infectious disease- bacterial-Shigellosis",79,9.47978098064877e-17,8.35049913551051
+"Human Diseases-Immune disease-Rheumatoid arthritis",6,1.1299454117428e-16,8.32655618511085
+"Organismal Systems-Circulatory system-Adrenergic signaling in cardiomyocytes",22,4.06751189629181e-16,8.27089421641436
+"Human Diseases-Infectious disease- bacterial-Yersinia infection",54,4.23738189569872e-16,-8.26483850315211
+"Environmental Information Processing-Signal transduction-Hedgehog signaling pathway",26,5.03026656138492e-16,-8.22089251932478
+"Environmental Information Processing-Signal transduction-FoxO signaling pathway",43,7.82832794033999e-16,-8.19325517526572
+"Human Diseases-Cancer- overview-Chemical carcinogenesis - DNA adducts",4,8.6058539682648e-16,8.1747019083312
+"Organismal Systems-Digestive system-Gastric acid secretion",7,2.54464055721234e-15,-8.03468688440059
+"Cellular Processes-Cell growth and death-Cell cycle",59,1.20526280000954e-14,7.86383291244509
+"Environmental Information Processing-Signal transduction-TGF-beta signaling pathway",51,1.45838784427759e-14,-7.82914111502797
+"Human Diseases-Infectious disease- bacterial-Tuberculosis",65,1.71443317975226e-14,-7.85545304485459
+"Organismal Systems-Endocrine system-Glucagon signaling pathway",18,1.82863337492478e-14,-7.77186549963693
+"Human Diseases-Cancer- overview-Pathways in cancer",117,2.35696201863218e-14,7.74300036141763
+"Metabolism-Metabolism of cofactors and vitamins-Riboflavin metabolism",5,3.57680224786416e-14,-7.68324456478374
+"Organismal Systems-Nervous system-Long-term potentiation",10,5.49269616549377e-14,7.62627492213409
+"Organismal Systems-Circulatory system-Vascular smooth muscle contraction",16,6.55564952681631e-14,-7.60420081728706
+"Metabolism-Carbohydrate metabolism-Pentose and glucuronate interconversions",11,7.20151350276086e-14,-7.58925105259728
+"Organismal Systems-Immune system-Antigen processing and presentation",10,8.70380451763695e-14,-7.78690201510306
+"Organismal Systems-Digestive system-Fat digestion and absorption",3,1.01851928013011e-13,7.54288491004216
+"Human Diseases-Infectious disease- viral-Herpes simplex virus 1 infection",31,1.77606924388769e-13,-7.54325685249687
+"Metabolism-Amino acid metabolism-Arginine and proline metabolism",22,3.66238911043488e-13,-7.38631463303616
+"Human Diseases-Cancer- overview-MicroRNAs in cancer",111,6.90639998562923e-13,-7.28349236614762
+"Human Diseases-Cancer- specific types-Breast cancer",14,8.49715110052392e-13,-7.25975835940776
+"Metabolism-Amino acid metabolism-Tyrosine metabolism",8,2.3424964380395e-12,7.11744918537793
+"Organismal Systems-Excretory system-Aldosterone-regulated sodium reabsorption",9,4.15305133777113e-12,-7.03240857736475
+"Metabolism-Lipid metabolism-Glycerolipid metabolism",11,7.27515599704546e-12,-6.95290777606751
+"Cellular Processes-Transport and catabolism-Autophagy - animal",89,1.04255611438903e-11,-6.90148030890615
+"Organismal Systems-Endocrine system-Renin secretion",9,1.69046658738766e-11,-6.82996664451675
+"Organismal Systems-Sensory system-Inflammatory mediator regulation of TRP channels",16,1.8769746211444e-11,-6.81343838422842
+"Human Diseases-Infectious disease- viral-Measles",16,3.06380474242782e-11,6.74169450106601
+"Environmental Information Processing-Signal transduction-Calcium signaling pathway",23,3.1230857368787e-11,6.73763718597752
+"Environmental Information Processing-Signal transduction-AMPK signaling pathway",34,3.94614862250841e-11,6.70501945559004
+"Metabolism-Metabolism of other amino acids-Glutathione metabolism",13,9.60182880382181e-11,-6.5926987709587
+"Human Diseases-Cancer- specific types-Gastric cancer",15,1.31940041596093e-10,6.52348237500613
+"Human Diseases-Infectious disease- bacterial-Pertussis",24,1.8366603952457e-10,-6.57865348563999
+"Environmental Information Processing-Signaling molecules and interaction-Cytokine-cytokine receptor interaction",108,1.90292092020025e-10,6.479756315096
+"Human Diseases-Neurodegenerative disease-Pathways of neurodegeneration - multiple diseases",28,2.97158224014671e-10,6.39389671680299
+"Environmental Information Processing-Signaling molecules and interaction-Neuroactive ligand-receptor interaction",19,5.03118058792125e-10,6.31383525023878
+"Environmental Information Processing-Signal transduction-VEGF signaling pathway",18,5.31436729283157e-10,-6.30287880486501
+"Metabolism-Metabolism of terpenoids and polyketides-Terpenoid backbone biosynthesis",13,5.45427316118793e-10,-6.35745958080519
+"Human Diseases-Infectious disease- viral-Epstein-Barr virus infection",54,6.40240016642762e-10,-6.29712493370892
+"Metabolism-Metabolism of cofactors and vitamins-Lipoic acid metabolism",7,7.32806273870004e-10,6.25257760124843
+"Metabolism-Lipid metabolism-Ether lipid metabolism",9,8.91612324119754e-10,6.2174505871296
+"Metabolism-Carbohydrate metabolism-Pentose phosphate pathway",18,1.22443723936699e-09,-6.21552351712142
+"Environmental Information Processing-Signal transduction-Rap1 signaling pathway",52,1.3144481451055e-09,6.15607285997787
+"Human Diseases-Cardiovascular disease-Viral myocarditis",5,1.51690901699866e-09,6.1319527491243
+"Human Diseases-Endocrine and metabolic disease-Alcoholic liver disease",35,9.13165161855247e-09,5.83600675772741
+"Metabolism-Lipid metabolism-Glycerophospholipid metabolism",28,9.1874430090948e-09,5.83411184960936
+"Organismal Systems-Digestive system-Cholesterol metabolism",17,2.1954393095005e-08,5.68412939313351
+"Cellular Processes-Transport and catabolism-Endocytosis",38,4.6938665631072e-08,5.55142831491488
+"Metabolism-Metabolism of cofactors and vitamins-Porphyrin metabolism",14,4.89307333736952e-08,-5.54287523708159
+"Metabolism-Lipid metabolism-Fatty acid degradation",15,5.0842437213439e-08,5.54118180118179
+"Organismal Systems-Environmental adaptation-Circadian rhythm",14,5.09648311296126e-08,-5.54002281633622
+"Metabolism-Metabolism of cofactors and vitamins-Ubiquinone and other terpenoid-quinone biosynthesis",8,8.1517810442156e-08,-5.449718961802
+"Metabolism-Carbohydrate metabolism-Galactose metabolism",12,1.16433866769424e-07,-5.38650374985108
+"Organismal Systems-Digestive system-Pancreatic secretion",2,3.82760491772777e-07,5.16426082634375
+"Cellular Processes-Cell growth and death-Oocyte meiosis",37,4.32836782753351e-07,5.15751934867003
+"Metabolism-Lipid metabolism-Linoleic acid metabolism",1,4.92370015264905e-07,5.11466530929347
+"Organismal Systems-Immune system-Th17 cell differentiation",30,5.41221168809458e-07,5.09605523882682
+"Genetic Information Processing-Translation-mRNA surveillance pathway",35,6.77085109614602e-07,-5.05336470506852
+"Metabolism-Nucleotide metabolism-Purine metabolism",39,1.68404408623362e-06,4.87782152129486
+"Cellular Processes-Cellular community - eukaryotesTight junction",72,3.12670621848373e-06,-4.74809113684075
+"Human Diseases-Infectious disease- parasitic-Leishmaniasis",22,3.12670621848373e-06,4.75357119218955
+"Organismal Systems-Endocrine system-PPAR signaling pathway",34,5.04433314113941e-06,-4.6494833255878
+"Environmental Information Processing-Signal transduction-Hippo signaling pathway",46,6.56022986440317e-06,4.59431875943318
+"Human Diseases-Infectious disease- bacterial-Pathogenic Escherichia coli infection",52,8.38227910118144e-06,-4.53985617373484
+"Organismal Systems-Sensory system-Taste transduction",2,9.94209914347634e-06,-4.5022706892669
+"Human Diseases-Infectious disease- bacterial-Staphylococcus aureus infection",8,1.79477212607525e-05,-4.39038150292906
+"Human Diseases-Endocrine and metabolic disease-Maturity onset diabetes of the young",4,2.75597496398359e-05,-4.27762838941784
+"Cellular Processes-Cell motility-Regulation of actin cytoskeleton",64,4.37624464906572e-05,4.1735803306151
+"Human Diseases-Substance dependence-Amphetamine addiction",8,4.54371056113103e-05,4.16398650058084
+"Metabolism-Carbohydrate metabolism-Glycolysis - Gluconeogenesis",21,7.59283946862776e-05,-4.04319357822103
+"Organismal Systems-Immune system-NOD-like receptor signaling pathway",66,7.59283946862776e-05,-4.04567120030432
+"Organismal Systems-Sensory system-Olfactory transduction",4,0.000136405494191929,-3.89997600849111
+"Organismal Systems-Endocrine system-Oxytocin signaling pathway",25,0.000144708687521417,-3.88462432485835
+"Organismal Systems-Immune system-Neutrophil extracellular trap formation",29,0.000319856443488973,3.69363755858343
+"Organismal Systems-Endocrine system-Relaxin signaling pathway",26,0.000330245857002687,3.67619901764369
+"Organismal Systems-Development and regeneration-Osteoclast differentiation",34,0.000372837145791088,3.64392072934415
+"Genetic Information Processing-Folding, sorting and degradation-Protein processing in endoplasmic reticulum",24,0.00039126957709436,3.63077842767978
+"Metabolism-Glycan biosynthesis and metabolism-Glycosphingolipid biosynthesis - ganglio series",12,0.000403547790950373,3.62108898368485
+"Human Diseases-Drug resistance- antineoplastic-Endocrine resistance",24,0.000430955826869034,3.60310355627921
+"Organismal Systems-Endocrine system-Regulation of lipolysis in adipocytes",12,0.000691925711877741,-3.47660011262389
+"Metabolism-Metabolism of other amino acids-Phosphonate and phosphinate metabolism",2,0.000803848886428765,3.43502126758112
+"Genetic Information Processing-Replication and repair-Fanconi anemia pathway",31,0.000864263814597774,3.42987373865722
+"Organismal Systems-Digestive system-Carbohydrate digestion and absorption",4,0.00125178616399694,-3.31001463893337
+"Organismal Systems-Immune system-Intestinal immune network for IgA production",1,0.0013002863716686,-3.29790532570905
+"Environmental Information Processing-Signaling molecules and interaction-ECM-receptor interaction",37,0.00136442323732858,3.30249451960872
+"Metabolism-Energy metabolism-Oxidative phosphorylation",2,0.00145480839798283,-3.26384118443338
+"Organismal Systems-Nervous system-Neurotrophin signaling pathway",47,0.00169148735871766,3.2196043003959
+"Environmental Information Processing-Signaling molecules and interaction-Cell adhesion molecules",62,0.00262656309264457,3.09087667269689
+"Metabolism-Energy metabolism-Nitrogen metabolism",3,0.00292545472875928,-3.05604206252352
+"Human Diseases-Endocrine and metabolic disease-Cushing syndrome",26,0.00327292353604508,-3.02078341484013
+"Genetic Information Processing-Translation-Aminoacyl-tRNA biosynthesis",8,0.00329972502244559,3.01716184729417
+"Genetic Information Processing-Folding, sorting and degradation-RNA degradation",5,0.00381821976687442,-2.97133893720157
+"Organismal Systems-Immune system-RIG-I-like receptor signaling pathway",34,0.00407018267139017,-2.95107931388082
+"Human Diseases-Immune disease-Systemic lupus erythematosus",6,0.00431566379549743,2.94936102060753
+"Organismal Systems-Digestive system-Mineral absorption",5,0.00433045752215247,-2.92837408982975
+"Metabolism-Energy metabolism-Sulfur metabolism",7,0.00451328974927838,-2.91481800163822
+"Human Diseases-Cardiovascular disease-Hypertrophic cardiomyopathy",3,0.00490575326235816,2.88704799114114
+"Metabolism-Metabolism of other amino acids-beta-Alanine metabolism",8,0.00507287944945795,-2.8750053505732
+"Cellular Processes-Cellular community - eukaryotesFocal adhesion",54,0.00516095535050547,2.86842073436412
+"Metabolism-Lipid metabolism-Sphingolipid metabolism",20,0.00526614928877253,2.86294829801251
+"Human Diseases-Cancer- overview-Central carbon metabolism in cancer",19,0.00931059605577467,2.67271125510396
+"Metabolism-Glycan biosynthesis and metabolism-Various types of N-glycan biosynthesis",7,0.0116926317986798,2.59385547756859
+"Environmental Information Processing-Signal transduction-Wnt signaling pathway",56,0.0148267214616543,-2.50957570173134
+"Metabolism-Amino acid metabolism-Histidine metabolism",5,0.0175353870469055,-2.44916495764667
+"Human Diseases-Endocrine and metabolic disease-Insulin resistance",33,0.0177975575724138,2.44140381428593
+"Environmental Information Processing-Signal transduction-NF-kappa B signaling pathway",64,0.0214466067786134,2.37273961451071
+"Metabolism-Glycan biosynthesis and metabolism-Glycosaminoglycan biosynthesis - heparan sulfate - heparin",5,0.0277978450095655,2.27269139081309
+"Organismal Systems-Endocrine system-Insulin signaling pathway",22,0.0394663290761294,2.13382091102095
+=======
+>>>>>>> 5512625 (Modified .md file)
 "Environmental Information Processing-Signal transduction-Phospholipase D signaling pathway",27,0,56.7657233882674
 "Organismal Systems-Immune system-Fc epsilon RI signaling pathway",12,0,56.8314430786379
 "Organismal Systems-Immune system-Platelet activation",20,0,43.0493131819441
@@ -240,3 +496,7 @@
 "Human Diseases-Drug resistance- antineoplastic-EGFR tyrosine kinase inhibitor resistance",24,0.0303962631019854,-2.2562220279214
 "Human Diseases-Endocrine and metabolic disease-Cushing syndrome",26,0.0305667685868835,-2.25186221098058
 "Human Diseases-Neurodegenerative disease-Pathways of neurodegeneration - multiple diseases",28,0.0312821944189487,2.24132917117454
+<<<<<<< HEAD
+=======
+>>>>>>> 2a2d5d550a48049fd6252deb5231db2262b45529
+>>>>>>> 5512625 (Modified .md file)

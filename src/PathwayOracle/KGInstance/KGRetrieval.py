@@ -132,16 +132,27 @@ class AgentRetrieval:
         new_wcc_structure = reorganize_wcc(wcc_res= self.wcc_res, linkDocs=interactionData)
         return new_wcc_structure, gene_pathway_map, paData_complete
 
-    def agentCommunicate(self, component_Select: dict = None):
+    def agentCommunicate(self, component_Select: dict[str, list] = None):
         # Initialize component_Select if it's None
         component_Select = component_Select or {}
+        isEmpty=False
 
+        if len(component_Select)==0:
+            isEmpty=True            
+
+        # Iterate through the linkDocs
         for outer_key, inner_dict in self.linkDocs.items():
-            if outer_key not in component_Select:
-                # Add all inner keys if outer key is not in component_Select
+            # if the outerkey is not in the selection and a selection is not made
+            if outer_key not in component_Select and isEmpty:
+                # Add all inner keys
                 component_Select[outer_key] = list(inner_dict.keys())
+            # else if the outerkey is not in the selection and a selection is made
+            elif outer_key not in component_Select:
+                # skip
+                continue
+            # else if the outerkey is in the selection
             else:
-                # If user provides specific subcomponent keys, check their validity
+                # If user provides specific subcomponent keys, if not then use the keys from the inner_dict
                 provided_inner_keys = component_Select[outer_key] or inner_dict.keys()
                 
                 # Retain only valid subcomponent keys
