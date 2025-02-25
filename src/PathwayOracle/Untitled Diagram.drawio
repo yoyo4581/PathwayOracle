@@ -1,114 +1,22 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/133.0.0.0 Safari/537.36" version="26.0.16">
   <diagram name="Page-1" id="nZFk1L0vzehwC3RNNBj1">
-    <mxGraphModel>
+    <mxGraphModel dx="410" dy="465" grid="1" gridSize="5" guides="0" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="Start" style="ellipse;aspect=fixed;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="8" y="104" width="50" height="50" as="geometry" />
+        <mxCell id="hx23fJJYlK3yCqs7KmKi-24" value="PathwayOracle" style="swimlane;startSize=20;horizontal=1;containerType=tree;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};gradientColor=default;" vertex="1" parent="1">
+          <mxGeometry x="300" y="20" width="600" height="360" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="User&#39;s request" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="108" y="52" width="154" height="154" as="geometry" />
-        </mxCell>
-        <mxCell id="4" value="Create application" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="487" y="102" width="163" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="5" value="Design application" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="700" y="102" width="191" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="6" value="Coding" style="rhombus;strokeWidth=2;whiteSpace=wrap;" vertex="1" parent="1">
-          <mxGeometry x="942" y="78" width="102" height="102" as="geometry" />
-        </mxCell>
-        <mxCell id="7" value="Debugging" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1165" y="8" width="134" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="8" value="Test application" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1145" y="112" width="174" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="9" value="Complete application" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1456" y="91" width="184" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="10" value="Fix issues" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1484" y="195" width="127" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="11" value="Deploy application" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1690" y="91" width="164" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="12" value="End" style="rounded=1;arcSize=20;strokeWidth=2" vertex="1" parent="1">
-          <mxGeometry x="1903" y="91" width="56" height="54" as="geometry" />
-        </mxCell>
-        <mxCell id="13" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.51;entryX=0;entryY=0.5;" edge="1" parent="1" source="2" target="3">
+        <mxCell id="hx23fJJYlK3yCqs7KmKi-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;jumpSize=2;endSize=2;startSize=2;entryX=0.999;entryY=0.352;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="hx23fJJYlK3yCqs7KmKi-24" source="hx23fJJYlK3yCqs7KmKi-35" target="hx23fJJYlK3yCqs7KmKi-42">
           <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
+            <mxPoint x="165" y="56.333333333333314" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="14" value="User wants to create an application" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="3" target="4">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="hx23fJJYlK3yCqs7KmKi-35" value="&lt;div style=&quot;line-height: 80%;&quot;&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 6px; line-height: 80%;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;FACADE Manager Class&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;PA_KG&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ username: str&lt;br&gt;+ password: str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ api_key: str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ recoveryMode: bool&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ retrievedDocs : defaultdict[Any, defaultdict[Any, list]]&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ summedDocs: defaultdict[Any, defaultdict[Any, dict]]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ retainedSummedDocs: dict[str, list]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ summedObj: class LLM_Summ&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ kgObj: class KG_InstanceFind&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ analysis: class kgAnalysis&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ __init__(username: str = None, password: str = None): set_api_key: None, set_zillis_credentials: None&lt;br&gt;+ sign_up(): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ fromInstance(instance_id: str = None): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ newInstance(subject: str = None):None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ removeInstance(subject: str = None): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ showInstance(): List[str]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ toDoc(folder: str): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ async generateSummaries(folder_name:String, to_write:bool = True): defaultDict[Any, defaultDict[Any, dict]]&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ processAll(geneFile: str, pathFile: str, token_max: int = 1000): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ Retrieval(components_select: dict[str, list]=None): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ Summarize(components_select: dict[str, list]=None, token_max: int = 1000)&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=4;" vertex="1" parent="hx23fJJYlK3yCqs7KmKi-24">
+          <mxGeometry x="250" y="30" width="105" height="105" as="geometry" />
         </mxCell>
-        <mxCell id="15" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="4" target="5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="16" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="17" value="Issues?" style="curved=1;startArrow=none;endArrow=block;exitX=0.96;exitY=0;entryX=0;entryY=0.36;" edge="1" parent="1" source="6" target="7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1095" y="20" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="18" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.88;entryX=1;entryY=0.25;" edge="1" parent="1" source="7" target="6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1095" y="77" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="19" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.55;entryX=0;entryY=0.5;" edge="1" parent="1" source="6" target="8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1095" y="139" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="20" value="Test passed" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.28;entryX=0;entryY=0.5;" edge="1" parent="1" source="8" target="9">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1387" y="118" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="21" value="Test failed" style="curved=1;startArrow=none;endArrow=block;exitX=0.96;exitY=1;entryX=0;entryY=0.28;" edge="1" parent="1" source="8" target="10">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1387" y="191" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="22" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0;exitY=0.62;entryX=0.97;entryY=1;" edge="1" parent="1" source="10" target="6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points">
-              <mxPoint x="1387" y="238" />
-              <mxPoint x="1095" y="238" />
-            </Array>
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="23" value="" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="9" target="11">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="24" value="" style="curved=1;startArrow=none;endArrow=block;exitX=0.99;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="11" target="12">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="hx23fJJYlK3yCqs7KmKi-42" value="&lt;div style=&quot;line-height: 80%;&quot;&gt;&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;font style=&quot;font-size: 6px; line-height: 80%;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;KGInstance.py Instance Class&amp;gt;&amp;gt;&lt;/i&gt;&lt;br&gt;&lt;b&gt;KG_InstanceFind&lt;/b&gt;&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ user: str&lt;br&gt;+ password: str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ subject: str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 1.6px;&quot;&gt;+ instance_id : str&lt;/font&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 1.6px;&quot;&gt;+ graphName: str&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ userFound: bool&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ recoveryMode: bool&lt;/font&gt;&lt;/p&gt;&lt;hr style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ __init__(user: str = None, password: str = None, subject: str = None): None&amp;nbsp;&lt;br&gt;+ new_Instance(): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ showInstances(): List&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ fromInstance(instance: str = None):None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;font style=&quot;font-size: 2px; line-height: 80%;&quot;&gt;+ removeInstances(instanceList: List = []): None&lt;/font&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;/p&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;fontSize=4;strokeWidth=1;opacity=80;" vertex="1" parent="hx23fJJYlK3yCqs7KmKi-24">
+          <mxGeometry x="35" y="30" width="80" height="75" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
